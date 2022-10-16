@@ -6,11 +6,11 @@ export const Alert = () => {
     if (!alert.visible) {
         return null
     }
-    const prifdf = () => console.log('Clicked')
+    
     return (
         <div className={`alert alert-${alert.type || 'warning'} alert-dismissible`} >
             <strong>Attention!</strong>
-            {alert.text}
+            <h5>{alert.text}</h5>
             <button  type="button" className="btn-close" data-bs-dismiss="alert" aria-label="Close" onClick={hide}></button>
         </div>
 
